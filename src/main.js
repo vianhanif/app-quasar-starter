@@ -1,34 +1,47 @@
-// === DEFAULT / CUSTOM STYLE ===
-// WARNING! always comment out ONE of the two require() calls below.
-// 1. use next line to activate CUSTOM STYLE (./src/themes)
-// require(`./themes/app.${__THEME}.styl`)
-// 2. or, use next line to activate DEFAULT QUASAR STYLE
-require(`quasar/dist/quasar.${__THEME}.css`)
-// ==============================
-
-// Uncomment the following lines if you need IE11/Edge support
-// require(`quasar/dist/quasar.ie`)
-// require(`quasar/dist/quasar.ie.${__THEME}.css`)
-
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.config.base with an alias.
 import Vue from 'vue'
-import Quasar from 'quasar'
+import Vuetify from 'vuetify'
+import VueHead from 'vue-head'
+import VueSession from 'vue-session'
+import VueLocalStorage from 'vue-localstorage'
+// import App from './App'
 import router from './router'
+import store from './store'
+import Quasar from 'quasar'
+
+import 'vuetify/dist/vuetify.min.css'
+import 'vuetify/dist/vuetify.min.js'
+
+Vue.use(VueSession)
+Vue.use(VueLocalStorage, {
+  name: 'localStorage',
+  createComputed: true
+})
+Vue.use(Vuetify)
+Vue.use(VueHead, {
+  separator: '',
+  complement: ''
+})
 
 Vue.config.productionTip = false
-Vue.use(Quasar) // Install Quasar Framework
+Vue.config.devtools = true
+Vue.config.debug = true
 
-if (__THEME === 'mat') {
-  require('quasar-extras/roboto-font')
-}
-import 'quasar-extras/material-icons'
-// import 'quasar-extras/ionicons'
-// import 'quasar-extras/fontawesome'
-// import 'quasar-extras/animate'
+/* eslint-disable no-new */
+// new Vue({
+//   el: '#app',
+//   store,
+//   router,
+//   template: '<App/>',
+//   components: { App }
+// })
 
 Quasar.start(() => {
   /* eslint-disable no-new */
   new Vue({
-    el: '#q-app',
+    el: '#app',
+    store,
     router,
     render: h => h(require('./App').default)
   })

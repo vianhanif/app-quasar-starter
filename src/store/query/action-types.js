@@ -1,0 +1,3 @@
+export const SET_QUERY = 'SET_QUERY'
+export const GET_QUERY = 'GET_QUERY'
+export const CLOSE_FORM_UPDATE_DATA = 'CLOSE_FORM_UPDATE_DATA'

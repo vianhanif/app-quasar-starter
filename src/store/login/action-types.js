@@ -1,0 +1,6 @@
+export const SET_USERNAME = 'SET_USERNAME'
+export const SET_PASSWORD = 'SET_PASSWORD'
+export const LOGIN_DATA = 'LOGIN_DATA'
+export const READY_TO_SUBMIT_LOGIN = 'READY_TO_SUBMIT_LOGIN'
+export const AUTH_USER = 'AUTH_USER'
+export const SET_USER_IS_LOGIN = 'SET_USER_IS_LOGIN'

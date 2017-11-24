@@ -152,8 +152,7 @@ export default {
           evt.rotationRate.gamma !== null) {
         this.rotateX = evt.rotationRate.beta * 0.7
         this.rotateY = evt.rotationRate.gamma * -0.7
-      }
-      else {
+      } else {
         /* evt.acceleration may be null in some cases, so we'll fall back
            to evt.accelerationIncludingGravity */
         const
@@ -172,8 +171,7 @@ export default {
         this.orienting = false
 
         window.addEventListener('devicemotion', this.rotate, false)
-      }
-      else {
+      } else {
         this.rotateX = evt.beta * 0.7
         this.rotateY = evt.gamma * -0.7
       }
@@ -183,11 +181,9 @@ export default {
     this.$nextTick(() => {
       if (this.orienting) {
         window.addEventListener('deviceorientation', this.orient, false)
-      }
-      else if (this.rotating) {
+      } else if (this.rotating) {
         window.addEventListener('devicemove', this.rotate, false)
-      }
-      else {
+      } else {
         document.addEventListener('mousemove', this.move)
       }
     })
@@ -195,11 +191,9 @@ export default {
   beforeDestroy () {
     if (this.orienting) {
       window.removeEventListener('deviceorientation', this.orient, false)
-    }
-    else if (this.rotating) {
+    } else if (this.rotating) {
       window.removeEventListener('devicemove', this.rotate, false)
-    }
-    else {
+    } else {
       document.removeEventListener('mousemove', this.move)
     }
   }
