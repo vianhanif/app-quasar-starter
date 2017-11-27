@@ -15,8 +15,8 @@ function createWindow () {
    */
   mainWindow = new BrowserWindow({
     title: config.name,
-    width: 800,
-    height: 600,
+    width: 1024,
+    height: 768,
     icon: path.join(__dirname, '../icons/icon.png'),
     webPreferences: {
       nodeIntegration: true,
