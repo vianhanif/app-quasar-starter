@@ -18,7 +18,7 @@
     "node-sass": "^4.8.3",
     "quasar-extras": "0.x",
     "quasar-framework": "^0.14.4",
-    "sass-loader": "^6.0.7",
+    "sass-loader": "^7.0.1",
     "style-loader": "^0.20.3",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
