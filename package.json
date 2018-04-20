@@ -19,7 +19,7 @@
     "quasar-extras": "0.x",
     "quasar-framework": "^0.14.4",
     "sass-loader": "^7.0.1",
-    "style-loader": "^0.20.3",
+    "style-loader": "^0.21.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
@@ -67,7 +67,7 @@
     "vue-template-compiler": "^2.5.16",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.22.0",
+    "webpack-hot-middleware": "^2.22.1",
     "webpack-merge": "^4.1.2"
   }
 }
