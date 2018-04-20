@@ -23,13 +23,13 @@
     "quasar-extras": "0.x",
     "quasar-framework": "^0.14.4",
     "sass-loader": "^7.0.1",
-    "style-loader": "^0.20.3",
+    "style-loader": "^0.21.0",
     "vue": "^2.5.16",
     "vue-head": "^2.0.11",
     "vue-localstorage": "^0.6.2",
     "vue-router": "^3.0.1",
     "vue-session": "^1.0.0",
-    "vuetify": "^1.0.15",
+    "vuetify": "^1.0.16",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -76,7 +76,7 @@
     "vue-template-compiler": "^2.5.16",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
-    "webpack-hot-middleware": "^2.21.2",
+    "webpack-hot-middleware": "^2.22.1",
     "webpack-merge": "^4.1.2"
   }
 }
